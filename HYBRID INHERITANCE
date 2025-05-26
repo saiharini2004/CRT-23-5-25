@@ -1,0 +1,38 @@
+package crt;
+
+public class Hybrid {
+
+	void eat()
+	{
+		System.out.println("Eating");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A a=new A();
+		a.run();
+		a.eat();
+		B b=new B();
+		b.run();
+		b.eat();
+	}
+
+}
+interface Runnable
+{
+	 abstract void run();//abstract void run() and void run() both are the same 
+}
+class A extends Hybrid implements Runnable
+{
+	public void run()
+	{
+		System.out.println("Inside A run method implemented");
+	}
+}
+class B extends Hybrid implements Runnable
+{
+	public void run()
+	{
+		System.out.println("Inside B run method implemented");
+	}
+}
+
