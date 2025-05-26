@@ -1,0 +1,41 @@
+package crt;
+
+public class Ex_String {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String s=new String("Hello");
+String a="Hii";
+String b="Hii";//String Constant Pool maintains single copy,Both a and b points to that address
+String s1=new String("Hello");//By using new keyword new memory block will be created
+if(s==s1)//Memory location
+{
+	System.out.println("S and S1 are in same location");
+}
+else
+{
+	System.out.println("S and S2 are not in same location");
+}
+if(s.equals(s1))//Data comparision
+{
+	System.out.println("S and S1 contains same data");
+}
+else
+{
+	System.out.println("S and S2 do not contains same data");
+}
+if(a==b)//Memory location
+{
+	System.out.println("A and B are in same location");
+}
+else
+{
+	System.out.println("A and B are not in same location");
+}
+if(a.equals(b))//Data comparision
+{
+	System.out.println("A and B contains same data");
+}
+else
+{
+	System.out.println("A and B do not contains same data");
