@@ -1,0 +1,14 @@
+//Within the package both public and protected methods works in the same way but when try to access in other package it is must and should to extend the class that contains protected method
+package crt;
+import basic.Ex_Protected;
+public class Ex_protected_child extends Ex_Protected{
+public void test()
+{
+	play();
+}
+public static void main(String args[])
+{
+	Ex_protected_child c=new Ex_protected_child();
+	c.test();
+}
+}
