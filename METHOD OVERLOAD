@@ -1,0 +1,29 @@
+package crt;
+
+public class Method_overload {
+	void Method_overload(int a,int b)
+	{
+		int c=a+b;
+		System.out.println("Sum:"+c);
+	}
+	void Method_overload(double a,double b)
+	{
+		double c=a+b;
+		System.out.println("Sum:"+c);
+	}
+	void Method_overload(String a,String b)
+	{
+		String c=a+b;
+		System.out.println("concatenated string:"+c);
+	}
+public static void main(String args[])
+{
+	Method_overload obj=new Method_overload();
+	obj.Method_overload(10, 20);
+	obj.Method_overload(10.5, 20.5);
+	obj.Method_overload("Hii ", "Nagu");
+
+}
+
+}
+
