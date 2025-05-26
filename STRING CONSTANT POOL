@@ -38,4 +38,4 @@ if(a.equals(b))//Data comparision
 }
 else
 {
-	System.out.println("A and B do not contains same data");
+	System.out.println("A and B do not contains same data");}}}
