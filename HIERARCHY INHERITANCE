@@ -1,0 +1,34 @@
+package crt;
+
+public class Hierarchical {
+public void greet()
+{
+	System.out.println("Inside Parent class");
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Ch1 c1=new Ch1();
+		c1.greet();
+		Ch2 c2=new Ch2();
+		c2.greet();
+		
+	}
+
+}
+class Ch1 extends Hierarchical
+{
+ Ch1()
+{
+	System.out.println("Inside class C1");
+}
+}
+
+class Ch2 extends Hierarchical
+{
+	Ch2()
+	{
+		System.out.println("Inside class C2");
+	}
+}
+
