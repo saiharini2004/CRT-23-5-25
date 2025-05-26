@@ -1,0 +1,35 @@
+package crt;
+
+public class Method_override {
+	public void eat()
+	{
+		System.out.println("Eating");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Dog g=new Dog();
+		g.eat();
+		Cat c=new Cat();
+		c.eat();
+		Method_override m=new Method_override();
+		m.eat();
+	}
+
+}
+
+class Dog extends Method_override
+{
+	public void eat()
+	{
+	System.out.println("Dog is eating");
+	}
+}
+class Cat extends Method_override
+{
+	public void eat()
+	{
+	System.out.println("Cat is eating");
+	}
+}
+
