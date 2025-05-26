@@ -1,0 +1,11 @@
+//Program to understand  memory allocation for variable
+package crt;
+
+public class Variable {
+public static void main(String args[])
+{
+	int a;//in java memory for variable is created only when value is assigned to variable
+	int b=20;
+	//System.out.println("a="+a+" b="+b);
+}
+}
