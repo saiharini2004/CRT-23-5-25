@@ -1,0 +1,26 @@
+package crt;
+
+public class Constructor_overload {
+	Constructor_overload(int a,int b)
+	{
+		int c=a+b;
+		System.out.println("Sum:"+c);
+	}
+	Constructor_overload(double a,double b)
+	{
+		double c=a+b;
+		System.out.println("Sum:"+c);
+	}
+	Constructor_overload(String a,String b)
+	{
+		String c=a+b;
+		System.out.println("concatenated string:"+c);
+	}
+public static void main(String args[])
+{
+	Constructor_overload obj=new Constructor_overload(10,20);
+	Constructor_overload obj1=new Constructor_overload(10.5,20.5);
+	Constructor_overload obj2=new Constructor_overload("Hii ","Nagu");
+}
+}
+
