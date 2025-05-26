@@ -1,0 +1,32 @@
+package crt;
+class Class_variable //Class variable can be declared both in class and constructor
+{
+	static int a=10;
+	Class_variable()
+	{
+		int b=20;
+		System.out.println(b	);
+	}
+}
+class Static_variable //Static variable can be declared inside class only
+{
+	static int a=100;
+	
+}
+class Instance_variable
+{
+	int a=1000;
+}
+public class Variable_Scope {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Class_variable ob=new Class_variable();
+		System.out.println(Class_variable.a);
+		System.out.println(Static_variable.a);
+		Instance_variable obj=new Instance_variable();
+		System.out.println(obj.a);
+	}
+
+}
+
