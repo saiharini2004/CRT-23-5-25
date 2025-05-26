@@ -1,0 +1,30 @@
+//Within the package both public and protected methods works in the same way but when try to access in other package it is must and should to extend the class that contains protected method
+package crt;
+
+public class Ex_public {
+	public void play()
+	{
+		System.out.println("Playing");
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hii h=new Hii();
+		h.hii();
+		h.test();
+	}
+
+}
+class Hii
+{
+	public void hii()
+	{
+		System.out.println("Inside Hii");
+	}
+	
+	void test()
+	{
+		Ex_public a=new Ex_public();
+		a.play();
+	}
+}
+
