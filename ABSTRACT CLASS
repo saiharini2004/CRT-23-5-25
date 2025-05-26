@@ -1,0 +1,25 @@
+package crt;
+
+abstract public class Ex_Abstract {
+abstract void add(int a,int b);
+int sub(int a,int b)
+{
+	int c=a-b;
+	return c;
+}
+public static void main(String args[])
+{
+	Testt t=new Testt();
+	t.add(10, 10);
+	int res=t.sub(10, 5);//Abstract classes cant be instantiated so use child reference to access parent methods
+	System.out.println("Subtraction:"+res);
+}
+}
+class Testt extends Ex_Abstract
+{
+	void add(int a,int b)
+	{
+		int c=a+b;
+		System.out.println("Addition:"+c);
+	}
+}
